@@ -22,7 +22,7 @@ Thumbs.db
 !.vscode/extensions.json
 
 # Compiled output
-/dist
+#/dist
 /out-tsc
 /src/**/*.js
 !src/demo/systemjs.config.js
