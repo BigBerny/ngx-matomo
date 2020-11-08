@@ -10,10 +10,10 @@
     "aot",
     "web analytics"
   ],
-  "main": "./bundles/ngx-matomo.umd.js",
-  "module": "./ngx-matomo.es5.js",
-  "es2015": "./ngx-matomo.js",
-  "typings": "./ngx-matomo.d.ts",
+  "main": "/dist/bundles/ngx-matomo.umd.js",
+  "module": "/dist/ngx-matomo.es5.js",
+  "es2015": "/dist/ngx-matomo.js",
+  "typings": "/dist/ngx-matomo.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
