@@ -27,10 +27,13 @@ export class MatomoInjector {
      *
      * @param url: URL of the Matomo instance to connect to.
      * @param id : SiteId for this application/site.
+     * @param skipTrackingInitialPageView: Optional boolean which, if true, will prevent tracking the initial page as part of init
      * @memberof MatomoInjector
      */
-    init(url: string, id: number) {
-        window._paq.push(['trackPageView']);
+    init(url: string, id: number, skipTrackingInitialPageView?: boolean) {
+        if (!skipTrackingInitialPageView) {
+            window._paq.push(['trackPageView']);
+          }
         window._paq.push(['enableLinkTracking']);
         (() => {
             const u = url;
