@@ -1,9 +1,9 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
+import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { MatomoModule } from 'ngx-matomo';
 
 describe('Demo App', () => {
-  beforeEach(waitForAsync(() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [MatomoModule],
       declarations: [AppComponent]
